@@ -90,7 +90,7 @@ export const LandingPage = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className=" lg:w-700px h-[250px] flex items-center justify-center ">
+              <div className=" h-[50px] lg:w-700px lg:h-[250px] flex items-center justify-center  ">
                 <motion.img
                   src={discounticon}
                   alt="discount icon"
