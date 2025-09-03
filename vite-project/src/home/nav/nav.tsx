@@ -15,8 +15,8 @@ export const Nav = () => {
       <div className="w-full flex items-center justify-between max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
         {/* Logo + Title */}
         <div className="flex items-center gap-2">
-          <img src={pizzalogo} alt="pizza logo" className="w-[119px] h-[67px]" />
-          <p className="font-['Fugaz_One'] text-[20px] leading-[26.67px] font-normal text-[#EE3A43]">
+          <img src={pizzalogo} alt="pizza logo" className="w-[70px] h-[50px] md:w-[119px] md:h-[67px]  lg:w-[119px] lg:h-[67px] " />
+          <p className="font-['Fugaz_One'] text-[12px] md:text-[20px] lg:text-[20px] leading-[26.67px] font-normal text-[#EE3A43] ">
             pizza hut
           </p>
         </div>

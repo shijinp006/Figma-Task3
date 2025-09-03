@@ -21,8 +21,8 @@ export const LandingPage = () => {
                     Starting at $24.00
                   </p>
                 </div>
-                <div className="flex items-center w-full lg:w-[526px] h-[100px]">
-                  <h4 className="font-['Roboto'] font-black text-[40px] leading-[50px] lg:text-[50px] lg:leading-[55px] align-middle text-white">
+                <div className="flex items-center w-full md:w-[550px] lg:w-[710px] h-[100px]">
+                  <h4 className="font-['Roboto'] font-black text-[30px] leading-[50px] lg:text-[50px] lg:leading-[55px] align-middle text-white">
                     The best Food <br /> Collection 2024
                   </h4>
                 </div>
@@ -64,7 +64,7 @@ export const LandingPage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <div className="flex items-center bg-white rounded-full overflow-hidden w-[300px] h-[40px] shadow">
+                <div className="flex items-center bg-white rounded-full overflow-hidden w-[250px] md:w-[300px] lg:w-[300px] h-[40px] shadow">
                   <div className="flex items-center px-3 flex-grow">
                     <img
                       src="https://logowik.com/content/uploads/images/paper-airplane5825.jpg"
@@ -90,11 +90,11 @@ export const LandingPage = () => {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className="w-700px h-[250px] flex items-center justify-center">
+              <div className=" lg:w-700px h-[250px] flex items-center justify-center ">
                 <motion.img
                   src={discounticon}
                   alt="discount icon"
-                  className="w-[90px]"
+                  className="w-[40px] md:w-[90px] lg:w-[90px]"
                   animate={{ rotate: [0, 10, -10, 0] }}
                   transition={{ repeat: Infinity, duration: 3 }}
                 />

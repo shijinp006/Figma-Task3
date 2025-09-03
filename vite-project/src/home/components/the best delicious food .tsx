@@ -25,23 +25,23 @@ export const BestDeliciousFood = () => {
         </div>
         {/*right*/}
 
-        <div className="flex flex-col p-9 ml-10 lg:p-0 ">
+        <div className="flex flex-col p-2 lg:ml-10 lg:p-0  ">
           <div className="w-[110px] h-[28px]">
             <p className="font-[Oswald] font-bold text-[14px] leading-[28px] text-[#00A149] capitalize align-middle">
               About Our Food
             </p>
           </div>
-          <div className=" w-full lg:w-[690px] h-[134px]">
-            <div className="w-full  lg:w-[580px] h-[130px]">
-              <p className="font-[Oswlad] font-bold text-[30px] lg:text-[50px] lg:leading-[60.2px] text-[#212121] capitalize align-middle">
+          <div className=" w-full h-[80px] md:h-[134px] lg:w-[690px] lg:h-[134px] border border-green-400">
+            <div className="w-full h-[80px]  md:h-[130px] lg:w-[580px] lg:h-[130px] border">
+              <p className="font-[Oswlad] font-bold text-[25px] leading-[30px] md:text-[50px] md:leading-[60px] lg:text-[50px] lg:leading-[60.2px] text-[#212121] capitalize align-middle">
                 The best delicious food
                 <br />
                 made from us...
               </p>
             </div>
           </div>
-          <div className="w-full lg:w-[630px] h-[84px] ">
-            <p className="font-[Oswald] font-normal text-xs lg:text-[17px] lg:leading-[28px] text-[#5C5C5B] align-middle">
+          <div className="w-full h-[110px] md:h-[84px] lg:w-[630px] lg:h-[84px] border ">
+            <p className="font-[Oswald] font-normal text-xs md:text-[17px] lg:text-[17px] lg:leading-[28px] text-[#5C5C5B] align-middle">
               Its the perfect dining experience where every dish is crafted with
               fresh, high-quality ingredients. Experience quick and efficient
               service that ensures your food is served fresh. It's the perfect
@@ -52,7 +52,7 @@ export const BestDeliciousFood = () => {
           <div className=" flex flex-col lg:flex-row w-full lg:w-[690px] lg:h-[125px] border-t border-[#D9D9D9] items-center">
             <div className=" w-full lg:w-[224px] h-[124px] border-b border-[#D9D9D9] flex flex-col items-center justify-center relative">
               <div className="flex flex-row items-center">
-                <div className="w-[53px] h-[117px] absolute top-[1%] left-[15%] lg:left-[6%]">
+                <div className="w-[53px] h-[117px] absolute top-[1%] left-[19%] md:left-[37%] lg:left-[7%]">
                   <p className="font-oswald font-bold  text-[90px] leading-[117px] text-[#212121] opacity-9 capitalize align-middle">
                     0
                   </p>
