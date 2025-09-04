@@ -1,6 +1,7 @@
 import { LandingPage } from "./components/landingpage";
 import { Banner } from "./components/banner";
 import { BestDeliciousFood } from "./components/the best delicious food ";
+import { DeliciousItem } from "./components/hotdeliciousitems";
 
 export const Home = () => {
   return (
@@ -15,6 +16,7 @@ export const Home = () => {
         <div className="w-full">
           <BestDeliciousFood/>
         </div>
+        <div className="w-full"><DeliciousItem/></div>
       </div>
     </>
   );
