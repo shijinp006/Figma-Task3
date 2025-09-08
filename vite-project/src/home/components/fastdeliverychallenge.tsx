@@ -6,7 +6,7 @@ import redchilly from "../../assets/redchilly.png";
 export const DeliveryChallenge = () => {
   return (
     <>
-      <div className="flex flex-wrap  w-full lg:h-[406px] h-full  items-center justify-center bg-[#EF294C] relative">
+      <div className="flex flex-wrap w-full lg:h-[406px] h-[600px] md:h-screen items-center justify-center bg-[#EF294C] relative">
         <div className="flex flex-wrap flex-row  w-full max-w-7xl items-center justify-center  px-4 md:px6 lg:px10 mx-auto ">
           {/*left8*/}
           <div className="flex flex-col justify-center">
