@@ -15,7 +15,7 @@ export const Banner = () => {
   return (
     <>
       <div className="flex flex-wrap w-full h-full lg:h-screen justify-center items-center mt-2 relative">
-        <div className="flex flex-wrap items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
+        <div className="flex flex-wrap items-center justify-center w-full h-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-7">
 
             {/* First Card */}

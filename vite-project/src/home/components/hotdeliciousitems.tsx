@@ -9,104 +9,91 @@ export const DeliciousItem = () => {
       title: "Chicago Deep Pizza",
       description:
         "Its the perfect dining experience where Experience quick and efficient",
-      image: pizza, // replace with actual image path or URL
+      image: pizza,
     },
     {
       title: "Fast Food Combo",
       description:
         "Its the perfect dining experience where Experience quick and efficient",
-      image: frenchFries, // replace with actual image path or URL
+      image: frenchFries,
     },
     {
       title: "Grilled Chicken",
       description:
         "Its the perfect dining experience where Experience quick and efficient",
-      image: chicken, // replace with actual image path or URL
+      image: chicken,
     },
     {
       title: "Whopper Burger King",
       description:
         "Its the perfect dining experience where Experience quick and efficient",
-      image: burger, // replace with actual image path or URL
+      image: burger,
     },
   ];
 
   return (
-    <>
-      <div className="flex flex-wrap items-center justify-center w-full h-full lg:h-screen ">
-        <div className="flex flex-wrap items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
-          <div className=" flex flex-col items-center justify-center bg-[#F3F3F3] w-full h-[500px]">
-            <div className="w-[107px] h-[28px]">
-              <p className="font-[Oswald] font-bold text-[12px] leading-[28px] text-center capitalize text-[#00A149]">
-                about our food
-              </p>
-            </div>
-            <div className="w-[454px] h-[67px]">
-              <p className="font-[Oswald] font-bold text-[45px] leading-[67.2px] text-center capitalize text-[#212121]">
-                hot delicious item
-              </p>
-            </div>
-            <div className="flex flex-row items-center justify-center w-full h-[50px] gap-3">
-              <div className="w-[110px] h-[40px] rounded-[40px] bg-[#FFC222] flex items-center justify-center cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div className="w-[80px] h-[28px] flex items-center justify-center ">
-                  <p className="font-[Oswald] font-medium text-[14px] leading-[28px] capitalize text-[#212121]">
-                    chicken fry
-                  </p>
-                </div>
-              </div>
-              <div className="w-[70px] h-[40px] flex items-center justify-center rounded-[40px] bg-[#D9D9D9] cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div className="flex items-center justify-center w-[35px] h-[28px]">
-                  <p className="font-[Oswald] font-medium text-[14px] leading-[28px] capitalize text-[#212121]">
-                    pizza
-                  </p>
-                </div>
-              </div>
-              <div className=" flex items-center justify-center w-[80px] h-[40px] rounded-[40px] bg-[#D9D9D9] cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div className="flex items-center justify-center w-[47px] h-[28px]">
-                  <p className="font-[Oswald] font-medium text-[14px] leading-[28px] capitalize text-[#212121]">
-                    burger
-                  </p>
-                </div>
-              </div>
-              <div className="flex items-center justify-center w-[80px] h-[40px] bg-[#D9D9D9] rounded-[40px] cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out">
-                <div className="flex items-center justify-center w-[53px] h-[28px]">
-                  <p className="font-[Oswald] font-medium text-[14px] leading-[28px] capitalize text-[#212121]">
-                    deserts
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="flex flex-row w-full h-[240px] items-center justify-center gap-6">
-              {Items.map((item, index) => (
-                <div
-                  key={index}
-                  className="flex flex-col items-center justify-center  p-2 cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
-                >
-                  <div className="w-[120px] h-[130px] flex items-center justify-center ">
-                    <img
-                      src={item.image}
-                      alt={item.title}
-                      className="object-contain h-full"
-                    />
-                  </div>
+    <div className="flex flex-wrap items-center justify-center w-full h-full lg:h-screen">
+      <div className="flex flex-wrap items-center justify-center w-full h-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
+        <div className="flex flex-col items-center justify-center bg-[#F3F3F3] w-full py-10 lg:h-[500px]">
+          {/* Small title */}
+          <div className="w-auto">
+            <p className="font-[Oswald] font-bold text-[12px] leading-[28px] text-center capitalize text-[#00A149]">
+              about our food
+            </p>
+          </div>
 
-                  <div className="w-[200px] h-[39px] flex items-center justify-center">
-                    <div className="w-[200px] h-[33px] flex items-center justify-center">
-                      <p className="font-[Oswald] font-bold text-[16px] leading-[33.8px] text-center capitalize text-[#212121] ">
-                        {item.title}
-                      </p>
-                    </div>
-                  </div>
+          {/* Main title */}
+          <div className="w-full max-w-[454px]">
+            <p className="font-[Oswald] font-bold text-[24px] sm:text-[30px] lg:text-[45px] lg:leading-[67.2px] text-center capitalize text-[#212121]">
+              hot delicious item
+            </p>
+          </div>
 
-                  <p className="text-sm text-center text-gray-600 mt-2 px-2 font-[Oswald]">
-                    {item.description}
+          {/* Categories */}
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
+            {["chicken fry", "pizza", "burger", "deserts"].map((cat, i) => (
+              <div
+                key={i}
+                className={`px-4 h-[40px] rounded-[40px] flex items-center justify-center cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out ${
+                  i === 0 ? "bg-[#FFC222]" : "bg-[#D9D9D9]"
+                }`}
+              >
+                <p className="font-[Oswald] font-medium text-[14px] capitalize text-[#212121]">
+                  {cat}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Items grid */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row w-full gap-6 mt-6 items-center justify-center border-0 ">
+            {Items.map((item, index) => (
+              <div
+                key={index}
+                className="flex flex-col items-center p-4 cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+              >
+                <div className="w-[100px] h-[110px] sm:w-[120px] sm:h-[130px] flex items-center justify-center">
+                  <img
+                    src={item.image}
+                    alt={item.title}
+                    className="object-contain h-full"
+                  />
+                </div>
+
+                <div className="w-full max-w-[200px] mt-2">
+                  <p className="font-[Oswald] font-bold text-[16px] text-center capitalize text-[#212121]">
+                    {item.title}
                   </p>
                 </div>
-              ))}
-            </div>
+
+                <p className="text-sm text-center text-gray-600 mt-2 px-2 font-[Oswald]">
+                  {item.description}
+                </p>
+              </div>
+            ))}
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
