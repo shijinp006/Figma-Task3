@@ -52,8 +52,8 @@ export const TrendingFoodMenu = () => {
 
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center flex-col w-full h-full lg:h-screen lg:mt-30">
-        <div className="flex flex-wrap items-center justify-center max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col w-full ">
+      <div className="flex flex-wrap items-center justify-center flex-col w-full h-full lg:h-screen lg:mt-20">
+        <div className="flex flex-wrap items-center justify-center max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col w-full lg:mt-8 ">
           <div className="flex items-center justify-center flex-col">
             {/*Head*/}
             <div className="flex flex-col items-center justify-center">
@@ -73,7 +73,7 @@ export const TrendingFoodMenu = () => {
               {menuItems.map((item, index) => (
                 <div
                   key={index}
-                  className="w-full lg:w-[500px] h-[120px] flex flex-col justify-center px-2 lg:px-1"
+                  className="w-full lg:w-[500px] h-[120px] flex flex-col justify-center  lg:px-1"
                 >
                   {/* Title */}
                   <div className="w-full max-w-[160px] h-[26px]">
@@ -84,11 +84,11 @@ export const TrendingFoodMenu = () => {
 
                   {/* Description + Price */}
                   <div className="flex flex-row items-center w-full relative ">
-                    <p className="font-[Oswald] font-normal text-[10px] lg:text-[12px] leading-[20px] lg:leading-[28px] text-[#5C5C5B] w-full lg:w-[400px] truncate">
+                    <p className="font-[Oswald] font-normal text-[10px] lg:text-[12px] leading-[20px] lg:leading-[28px] text-[#5C5C5B] w-full lg:w-[400px] truncate ">
                       {item.description}
                     </p>
 
-                    <p className="font-[Oswald] font-medium text-[12px] lg:text-[14px] leading-[18px] lg:leading-[20px] capitalize text-[#FFC222] ml-2 lg:absolute lg:top-[-2%] lg:right-35">
+                    <p className="font-[Oswald] font-medium text-[12px] lg:text-[14px] leading-[18px] lg:leading-[20px] capitalize text-[#FFC222] ml-2 lg:absolute lg:top-[-2%] lg:right-30">
                       {item.price}
                     </p>
                   </div>

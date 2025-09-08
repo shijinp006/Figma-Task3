@@ -6,6 +6,7 @@ import { BlackBanner } from "./components/blackbanner";
 import { DeliveryChallenge } from "./components/fastdeliverychallenge";
 import { TodaySpecialDelicious } from "./components/todayspecildelicious";
 import { TrendingFoodMenu } from "./components/trendingfoodmenu";
+import { BurgerPizzaBanner } from "./components/burger&pizzabanner";
 
 export const Home = () => {
   return (
@@ -34,6 +35,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <TrendingFoodMenu />
+        </div>
+         <div className="w-full">
+          <BurgerPizzaBanner />
         </div>
       </div>
     </>
