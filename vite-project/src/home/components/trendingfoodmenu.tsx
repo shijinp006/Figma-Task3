@@ -83,11 +83,12 @@ export const TrendingFoodMenu = () => {
                   </div>
 
                   {/* Description + Price */}
-                  <div className="flex flex-row items-center justify-between w-full ">
-                    <p className="font-[Oswald] font-normal text-[10px] lg:text-[12px] leading-[20px] lg:leading-[28px] text-[#5C5C5B] flex-1 flex lg:w-[100px]">
+                  <div className="flex flex-row items-center w-full relative ">
+                    <p className="font-[Oswald] font-normal text-[10px] lg:text-[12px] leading-[20px] lg:leading-[28px] text-[#5C5C5B] w-full lg:w-[400px] truncate">
                       {item.description}
                     </p>
-                    <p className="font-[Oswald] font-medium text-[12px] lg:text-[14px] leading-[18px] lg:leading-[20px] capitalize text-[#FFC222] ml-2">
+
+                    <p className="font-[Oswald] font-medium text-[12px] lg:text-[14px] leading-[18px] lg:leading-[20px] capitalize text-[#FFC222] ml-2 lg:absolute lg:top-[-2%] lg:right-35">
                       {item.price}
                     </p>
                   </div>
