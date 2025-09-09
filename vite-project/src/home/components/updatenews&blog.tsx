@@ -25,7 +25,7 @@ export const UpdateNews = () => {
             <div className="flex items-center justify-center flex-col lg:flex-row gap-3 ">
               {/*Card1*/}
               <div className="w-full  md:w-[300px]  lg:w-[300px]  h-[400px] flex flex-col  items-center lg:justify-center rounded-[16px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
-                <div className="flex items-center justify-center w-[300px] h-[200px] ">
+                <div className="flex items-center justify-center w-full lg:w-[300px] h-[200px] ">
                   <img src={burger} alt="burger" className="rounded-[4px]" />
                 </div>
                 <div className="flex items-center justify-center flex-col w-full  lg:w-[300px] h-[330px] bg-[#F4F4F4] rounded-[4px] p-4 ">
@@ -61,11 +61,11 @@ export const UpdateNews = () => {
               </div>
               {/*Card2*/}
               <div className="w-full h-[400px]  md:w-[300px]  lg:w-[300px] lg:h-[100px] flex flex-col items-center lg:justify-center rounded-[16px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
-                <div className="flex items-center justify-center w-[300px] h-[200px] ">
+                <div className="flex items-center justify-center w-full lg:w-[300px] h-[200px] ">
                   <img
                     src={hotburger}
                     alt="hot burger"
-                    className="rounded-[4px] w-[300px] h-[160px]"
+                    className="rounded-[4px] w-full lg:w-[300px] h-[160px]"
                   />
                 </div>
                 <div className="flex items-center justify-center flex-col w-full  lg:w-[300px] h-[330px] bg-[#F4F4F4] rounded-[4px] p-4">
@@ -100,7 +100,7 @@ export const UpdateNews = () => {
               </div>
               {/*Card3*/}
               <div className="w-full  md:w-[300px]   lg:w-[300px] h-[400px] flex flex-col items-center justify-center rounded-[16px] cursor-pointer hover:scale-105 transition duration-300 ease-in-out">
-                <div className="flex items-center  lg:justify-center w-[300px] h-[200px] ">
+                <div className="flex items-center  lg:justify-center w-full lg:w-[300px] h-[200px] ">
                   <img
                     src={burgerPastha}
                     alt="burgerPasta"
