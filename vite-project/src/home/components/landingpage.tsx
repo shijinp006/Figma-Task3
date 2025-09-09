@@ -8,7 +8,7 @@ export const LandingPage = () => {
     <>
       <div className="flex flex-wrap w-full h-screen relative bg-black items-center justify-center border">
         <div className="flex items-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
-          <div className="flex flex-row items-center justify-center">
+          <div className="flex flex-row items-center justify-center relative">
             <div className="flex flex-col gap-4">
               <motion.div
                 className="flex flex-col justify-center"
@@ -64,7 +64,7 @@ export const LandingPage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <div className="flex items-center bg-white rounded-full overflow-hidden w-[250px] md:w-[300px] lg:w-[300px] h-[40px] shadow">
+                <div className="flex items-center bg-white rounded-full overflow-hidden w-[280px] md:w-[300px] lg:w-[300px] h-[40px] shadow border border-white">
                   <div className="flex items-center px-3 flex-grow">
                     <img
                       src="https://logowik.com/content/uploads/images/paper-airplane5825.jpg"
@@ -85,7 +85,7 @@ export const LandingPage = () => {
             </div>
 
             <motion.div
-              className="w-full h-[350px] flex items-center justify-center"
+              className="w-full h-[350px] flex items-center justify-center  absolute right-[-20%] "
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
