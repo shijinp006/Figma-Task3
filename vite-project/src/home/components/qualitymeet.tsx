@@ -16,7 +16,7 @@ export const QualityMeet = () => {
               </div>
 
               <div className="flex items-center w-full lg:w-[633px] mb-4 justify-center lg:justify-start">
-                <div className="flex items-center w-full lg:w-[476px]">
+                <div className="flex items-center justify-center  lg:justify-start w-full lg:w-[476px]">
                   <h1 className="font-[Oswald] font-bold text-[28px] sm:text-[36px] md:text-[44px] lg:text-[50px] leading-[36px] sm:leading-[48px] md:leading-[54px] lg:leading-[60px] capitalize text-[#212121] align-middle">
                     Where Quality Meet <br />
                     Excellent <span className="text-[#F3274C]">Service.</span>
@@ -24,7 +24,7 @@ export const QualityMeet = () => {
                 </div>
               </div>
 
-              <div className="w-full lg:w-[600px] mb-4">
+              <div className="w-full lg:w-[600px]  mb-4">
                 <p className="font-[Oswald] font-normal text-[14px] sm:text-[15px] md:text-[16px] leading-[20px] sm:leading-[24px] md:leading-[28px] text-[#5C5C5B] align-middle">
                   Its the perfect dining experience where every dish is crafted
                   with fresh, high-quality. Experience quick and efficient
