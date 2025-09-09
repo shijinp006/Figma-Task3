@@ -85,12 +85,12 @@ export const LandingPage = () => {
             </div>
 
             <motion.div
-              className="w-full h-[80px]  lg:h-[350px] flex items-center justify-center border border-white"
+              className="w-[100px] h-[80px]  lg:h-[350px] flex items-center justify-center  absolute right-[-20%] md:right-[1%] lg:right-[1%]"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
             >
-              <div className=" h-[50px] lg:w-700px lg:h-[250px] flex items-center justify-center  ">
+              <div className=" h-[50px] lg:w-700px lg:h-[250px] flex items-center justify-center">
                 <motion.img
                   src={discounticon}
                   alt="discount icon"
