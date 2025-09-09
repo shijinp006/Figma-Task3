@@ -69,7 +69,7 @@ export const TrendingFoodMenu = () => {
               </div>
             </div>
             {/*Center*/}
-            <div className="flex flex-col  lg:flex-row lg:flex-wrap lg:pb-4 border-[1px] border-[#5C5C5B] rounded-[13px] h-full lg:h-[460px] items-center justify-center w-full">
+            <div className="flex flex-col  lg:flex-row lg:flex-wrap lg:pb-4 border-[1px] border-[#5C5C5B] rounded-[13px] h-full lg:h-[460px] items-center justify-center w-full p-1 lg:p-0">
               {menuItems.map((item, index) => (
                 <div
                   key={index}

@@ -24,7 +24,7 @@ export const BurgerPizzaBanner = () => {
             {Images.map((item, index) => (
               <div
                 key={index}
-                className="w-full pb-2 md:h-[300px] md:pb-4 lg:w-[320px] lg:h-[430px] lg:pb-0 flex items-center justify-center  overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+                className="w-full pb-2  md:h-[300px] md:pb-4 lg:w-[320px] lg:h-[430px]  lg:pb-0 flex items-center justify-center  overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
               >
                 <img
                   src={item.image}

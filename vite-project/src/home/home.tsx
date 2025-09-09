@@ -7,6 +7,7 @@ import { DeliveryChallenge } from "./components/fastdeliverychallenge";
 import { TodaySpecialDelicious } from "./components/todayspecildelicious";
 import { TrendingFoodMenu } from "./components/trendingfoodmenu";
 import { BurgerPizzaBanner } from "./components/burger&pizzabanner";
+import { QualityMeet } from "./components/qualitymeet";
 
 export const Home = () => {
   return (
@@ -36,8 +37,11 @@ export const Home = () => {
         <div className="w-full">
           <TrendingFoodMenu />
         </div>
-         <div className="w-full">
+        <div className="w-full">
           <BurgerPizzaBanner />
+        </div>
+        <div className="w-full">
+          <QualityMeet />
         </div>
       </div>
     </>
