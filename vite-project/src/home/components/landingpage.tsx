@@ -64,7 +64,7 @@ export const LandingPage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <div className="flex items-center bg-white rounded-full overflow-hidden w-[250px] md:w-[300px] lg:w-[300px] h-[40px] shadow">
+                <div className="flex items-center bg-white rounded-full overflow-hidden  w-full md:w-[300px] lg:w-[300px] h-[40px] shadow">
                   <div className="flex items-center px-3 flex-grow">
                     <img
                       src="https://logowik.com/content/uploads/images/paper-airplane5825.jpg"
