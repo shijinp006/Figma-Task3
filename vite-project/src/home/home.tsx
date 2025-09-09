@@ -12,6 +12,7 @@ import { HowWeServeYou } from "./components/howweserveyou";
 import { PiterBowmen } from "./components/piterbowmen";
 import { UpdateNews } from "./components/updatenews&blog";
 import { BottomBanner } from "./components/bottombanner";
+import { Footer } from "./components/footer";
 
 export const Home = () => {
   return (
@@ -58,6 +59,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <BottomBanner />
+        </div>
+        <div className="w-full">
+          <Footer />
         </div>
       </div>
     </>
