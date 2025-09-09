@@ -8,6 +8,8 @@ import { TodaySpecialDelicious } from "./components/todayspecildelicious";
 import { TrendingFoodMenu } from "./components/trendingfoodmenu";
 import { BurgerPizzaBanner } from "./components/burger&pizzabanner";
 import { QualityMeet } from "./components/qualitymeet";
+import { HowWeServeYou } from "./components/howweserveyou";
+import { PiterBowmen } from "./components/piterbowmen";
 
 export const Home = () => {
   return (
@@ -42,6 +44,12 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <QualityMeet />
+        </div>
+        <div className="w-full">
+          <HowWeServeYou />
+        </div>
+        <div className="w-full">
+          <PiterBowmen />
         </div>
       </div>
     </>
