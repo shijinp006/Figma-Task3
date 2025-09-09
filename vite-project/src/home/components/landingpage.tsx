@@ -77,7 +77,7 @@ export const LandingPage = () => {
                       className="text-xs flex-grow border-none outline-none bg-transparent"
                     />
                   </div>
-                  <button className="w-[120px] h-full bg-[#EF294C] text-white text-sm font-medium rounded-full cursor-pointer transition transform hover:scale-95">
+                  <button className=" w-full lg:w-[120px] h-full bg-[#EF294C] text-white text-sm font-medium rounded-full cursor-pointer transition transform hover:scale-95">
                     Subscribe
                   </button>
                 </div>
