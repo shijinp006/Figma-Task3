@@ -11,6 +11,7 @@ import { QualityMeet } from "./components/qualitymeet";
 import { HowWeServeYou } from "./components/howweserveyou";
 import { PiterBowmen } from "./components/piterbowmen";
 import { UpdateNews } from "./components/updatenews&blog";
+import { BottomBanner } from "./components/bottombanner";
 
 export const Home = () => {
   return (
@@ -54,6 +55,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <UpdateNews />
+        </div>
+        <div className="w-full">
+          <BottomBanner />
         </div>
       </div>
     </>
