@@ -64,7 +64,7 @@ export const LandingPage = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.8, delay: 0.6 }}
               >
-                <div className="flex items-center bg-white rounded-full overflow-hidden w-[280px] md:w-[300px] lg:w-[300px] h-[40px] shadow border border-white">
+                <div className="flex items-center bg-white rounded-full overflow-hidden w-[250px] md:w-[300px] lg:w-[300px] h-[40px] shadow">
                   <div className="flex items-center px-3 flex-grow">
                     <img
                       src="https://logowik.com/content/uploads/images/paper-airplane5825.jpg"
@@ -77,7 +77,7 @@ export const LandingPage = () => {
                       className="text-xs flex-grow border-none outline-none bg-transparent"
                     />
                   </div>
-                  <button className=" w-full lg:w-[120px] h-full bg-[#EF294C] text-white text-sm font-medium rounded-full cursor-pointer transition transform hover:scale-95">
+                  <button className="w-full h-full bg-[#EF294C] text-white text-sm font-medium rounded-full cursor-pointer transition transform hover:scale-95">
                     Subscribe
                   </button>
                 </div>
@@ -85,7 +85,7 @@ export const LandingPage = () => {
             </div>
 
             <motion.div
-              className="w-full h-[350px] flex items-center justify-center  absolute right-[-35%] "
+              className="w-full h-[80px]  lg:h-[350px] flex items-center justify-center border border-white"
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}

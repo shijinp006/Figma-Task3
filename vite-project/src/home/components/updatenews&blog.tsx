@@ -1,11 +1,14 @@
 import burger from "../../assets/normalburger.jpg";
 import hotburger from "../../assets/hotburger.jpg";
 import burgerPastha from "../../assets/burgerpastha.jpg";
+import shadowBurger from "../../assets/burgershadow2.png";
+import shadowFrenchFries from "../../assets/shadowfrenchfries.png"
 
 export const UpdateNews = () => {
   return (
     <>
-      <div className="flex flex-wrap items-center justify-center flex-col w-full h-full lg:h-screen ">
+      <div className="flex flex-wrap items-center justify-center flex-col lg:flex-row w-full h-full lg:h-screen relative">
+
         <div className="flex flex-wrap items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10">
           <div className="flex items-center justify-center flex-col gap-4">
             {/*Head*/}
@@ -140,6 +143,8 @@ export const UpdateNews = () => {
             </div>
           </div>
         </div>
+        <img src={shadowBurger} alt="shadowBurger" className=" hidden lg:block absolute left-2 top-40" />
+        <img src={shadowFrenchFries} alt="shadow French Fries"  className="hidden lg:block "/>
       </div>
     </>
   );
