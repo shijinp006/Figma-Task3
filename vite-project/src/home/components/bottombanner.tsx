@@ -6,7 +6,7 @@ import image from "../../assets/image.jpg";
 
 export const BottomBanner = () => {
   return (
-    <div className="flex items-center justify-center w-full h-full lg:h-[380px]">
+    <div className="flex items-center justify-center w-full h-full ">
       <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-full h-full">
         <div className="flex items-center justify-center w-full h-full ">
           <img src={pasta} alt="pasta" className="h-[297px] w-full" />
