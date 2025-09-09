@@ -144,7 +144,7 @@ export const UpdateNews = () => {
           </div>
         </div>
         <img src={shadowBurger} alt="shadowBurger" className=" hidden lg:block absolute left-2 top-40" />
-        <img src={shadowFrenchFries} alt="shadow French Fries"  className="hidden lg:block "/>
+        <img src={shadowFrenchFries} alt="shadow French Fries"  className="hidden lg:block absolute right-9 bottom-9  "/>
       </div>
     </>
   );
