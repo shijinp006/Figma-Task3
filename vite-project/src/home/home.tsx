@@ -10,6 +10,7 @@ import { BurgerPizzaBanner } from "./components/burger&pizzabanner";
 import { QualityMeet } from "./components/qualitymeet";
 import { HowWeServeYou } from "./components/howweserveyou";
 import { PiterBowmen } from "./components/piterbowmen";
+import { UpdateNews } from "./components/updatenews&blog";
 
 export const Home = () => {
   return (
@@ -50,6 +51,9 @@ export const Home = () => {
         </div>
         <div className="w-full">
           <PiterBowmen />
+        </div>
+        <div className="w-full">
+          <UpdateNews />
         </div>
       </div>
     </>
