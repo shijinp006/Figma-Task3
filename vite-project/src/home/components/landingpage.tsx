@@ -85,7 +85,7 @@ export const LandingPage = () => {
             </div>
 
             <motion.div
-              className="w-full h-[350px] flex items-center justify-center  absolute right-[-20%] "
+              className="w-full h-[350px] flex items-center justify-center  absolute right-[-35%] "
               initial={{ opacity: 0, scale: 0.8 }}
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
