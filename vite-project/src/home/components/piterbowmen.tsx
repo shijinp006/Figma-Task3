@@ -11,8 +11,15 @@ export const PiterBowmen = () => {
       >
         <div className="flex flex-col lg:flex-row items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto gap-8 lg:gap-16">
           {/* Image */}
-          <div className="w-full md:w-[300px] lg:w-[374px] h-auto">
+          <div className="w-full md:w-[300px] lg:w-[374px] h-auto relative">
             <img src={piterBowmen} alt="piterBowen" className="w-full h-auto" />
+            <div className="flex items-center justify-center w-[140px] h-[50px] bg-[#00A149] rotate-[-90deg]  absolute left-[-18%] bottom-34">
+              <div className="flex items-center justify-center w-[70px] h-[26px]  ">
+                <p className="font-[Oswald] font-medium text-[20px] leading-[26px] capitalize text-white">
+                  Feedback
+                </p>
+              </div>
+            </div>
           </div>
 
           {/* Text & Stars */}
