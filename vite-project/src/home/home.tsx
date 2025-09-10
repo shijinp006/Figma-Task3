@@ -40,23 +40,24 @@ type HomeProps = {
 
 export const Home = ({ action }: HomeProps) => {
   // Step 3: type refs properly
-  const refs: Record<SectionKey, RefObject<HTMLDivElement>> = {
-    Home: useRef<HTMLDivElement>(null),
-    Banner: useRef<HTMLDivElement>(null),
-    Best: useRef<HTMLDivElement>(null),
-    Delicious: useRef<HTMLDivElement>(null),
-    Black: useRef<HTMLDivElement>(null),
-    Delivery: useRef<HTMLDivElement>(null),
-    Shop: useRef<HTMLDivElement>(null),
-    Trending: useRef<HTMLDivElement>(null),
-    BurgerPizza: useRef<HTMLDivElement>(null),
-    AboutUs: useRef<HTMLDivElement>(null),
-    Serve: useRef<HTMLDivElement>(null),
-    Blog: useRef<HTMLDivElement>(null),
-    Pages: useRef<HTMLDivElement>(null),
-    Bottom: useRef<HTMLDivElement>(null),
-    Contact: useRef<HTMLDivElement>(null),
-  };
+  const refs: Record<SectionKey, React.RefObject<HTMLDivElement | null>> = {
+  Home: useRef<HTMLDivElement>(null),
+  Banner: useRef<HTMLDivElement>(null),
+  Best: useRef<HTMLDivElement>(null),
+  Delicious: useRef<HTMLDivElement>(null),
+  Black: useRef<HTMLDivElement>(null),
+  Delivery: useRef<HTMLDivElement>(null),
+  Shop: useRef<HTMLDivElement>(null),
+  Trending: useRef<HTMLDivElement>(null),
+  BurgerPizza: useRef<HTMLDivElement>(null),
+  AboutUs: useRef<HTMLDivElement>(null),
+  Serve: useRef<HTMLDivElement>(null),
+  Blog: useRef<HTMLDivElement>(null),
+  Pages: useRef<HTMLDivElement>(null),
+  Bottom: useRef<HTMLDivElement>(null),
+  Contact: useRef<HTMLDivElement>(null),
+};
+
 
   // Step 4: scroll effect
   useEffect(() => {
