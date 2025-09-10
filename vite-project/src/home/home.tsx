@@ -36,8 +36,8 @@ export const Home = ({ action }: HomeProps) => {
     BurgerPizza: useRef<HTMLDivElement>(null),
     AboutUs: useRef<HTMLDivElement>(null),
     Serve: useRef<HTMLDivElement>(null),
-    Blog: useRef<HTMLDivElement>(null),
     Pages: useRef<HTMLDivElement>(null),
+    Blog: useRef<HTMLDivElement>(null),
     Bottom: useRef<HTMLDivElement>(null),
     Contact: useRef<HTMLDivElement>(null),
   };
@@ -50,6 +50,8 @@ export const Home = ({ action }: HomeProps) => {
         block: "start",
       });
     }
+    console.log("hell");
+    
   }, [action]);
 
   return (
@@ -87,10 +89,10 @@ export const Home = ({ action }: HomeProps) => {
       <div className="w-full" ref={refs.Serve}>
         <HowWeServeYou />
       </div>
-      <div className="w-full" ref={refs.Blog}>
+      <div className="w-full" ref={refs.Pages}>
         <PiterBowmen />
       </div>
-      <div className="w-full" ref={refs.Pages}>
+      <div className="w-full" ref={refs.Blog}>
         <UpdateNews />
       </div>
       <div className="w-full" ref={refs.Bottom}>
