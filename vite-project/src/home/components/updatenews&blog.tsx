@@ -136,8 +136,8 @@ export const UpdateNews = () => {
                     className="rounded-[4px]"
                   />
                 </div>
-                <div className="flex items-center justify-center flex-col w-full  lg:w-[300px] h-[330px] bg-[#F4F4F4] rounded-[4px] p-4">
-                  <div className="flex  flex-row w-full h-[40px] border-b border-[#00A149]">
+                <div className="flex items-center justify-center flex-col w-full  lg:w-[300px] h-[320px] bg-[#F4F4F4] rounded-[4px] p-4">
+                  <div className="flex  flex-row w-full  lg:h-[40px] border-b border-[#00A149]">
                     <div className="flex items-center justify-center w-[80px] h-[28px]">
                       <p className="font-[Oswald] font-semibold text-[12px] leading-[16px] capitalize text-[#212121]">
                         15 Feb 2024
