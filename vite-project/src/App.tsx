@@ -5,13 +5,13 @@ import { useState } from "react";
 
 function App() {
   const [action,setAction] = useState("")
-  console.log(action,"action");
+
   
   return (
     <>
       <div className="w-full">
         <Nav  Action = {setAction}/>
-        <Home action ={action}/>
+        <Home action={action} />
       </div>
     </>
   );

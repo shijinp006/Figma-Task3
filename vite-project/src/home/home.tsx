@@ -1,4 +1,4 @@
-import { useRef, useEffect, RefObject } from "react";
+import { useRef, useEffect } from "react";
 import { LandingPage } from "./components/landingpage";
 import { Banner } from "./components/banner";
 import { BestDeliciousFood } from "./components/the best delicious food ";
@@ -15,49 +15,33 @@ import { UpdateNews } from "./components/updatenews&blog";
 import { BottomBanner } from "./components/bottombanner";
 import { Footer } from "./components/footer";
 
-// Step 1: define valid keys
-type SectionKey =
-  | "Home"
-  | "Banner"
-  | "Best"
-  | "Delicious"
-  | "Black"
-  | "Delivery"
-  | "Shop"
-  | "Trending"
-  | "BurgerPizza"
-  | "AboutUs"
-  | "Serve"
-  | "Blog"
-  | "Pages"
-  | "Bottom"
-  | "Contact";
+// Step 1: define valid keys for refs
 
-// Step 2: type the prop
+
+// Step 2: define props
 type HomeProps = {
-  action?: SectionKey;
+  action?: string;
 };
 
 export const Home = ({ action }: HomeProps) => {
   // Step 3: type refs properly
-  const refs: Record<SectionKey, React.RefObject<HTMLDivElement | null>> = {
-  Home: useRef<HTMLDivElement>(null),
-  Banner: useRef<HTMLDivElement>(null),
-  Best: useRef<HTMLDivElement>(null),
-  Delicious: useRef<HTMLDivElement>(null),
-  Black: useRef<HTMLDivElement>(null),
-  Delivery: useRef<HTMLDivElement>(null),
-  Shop: useRef<HTMLDivElement>(null),
-  Trending: useRef<HTMLDivElement>(null),
-  BurgerPizza: useRef<HTMLDivElement>(null),
-  AboutUs: useRef<HTMLDivElement>(null),
-  Serve: useRef<HTMLDivElement>(null),
-  Blog: useRef<HTMLDivElement>(null),
-  Pages: useRef<HTMLDivElement>(null),
-  Bottom: useRef<HTMLDivElement>(null),
-  Contact: useRef<HTMLDivElement>(null),
-};
-
+  const refs: Record<string, React.RefObject<HTMLDivElement | null>> = {
+    Home: useRef<HTMLDivElement>(null),
+    Banner: useRef<HTMLDivElement>(null),
+    Best: useRef<HTMLDivElement>(null),
+    Delicious: useRef<HTMLDivElement>(null),
+    Black: useRef<HTMLDivElement>(null),
+    Delivery: useRef<HTMLDivElement>(null),
+    Shop: useRef<HTMLDivElement>(null),
+    Trending: useRef<HTMLDivElement>(null),
+    BurgerPizza: useRef<HTMLDivElement>(null),
+    AboutUs: useRef<HTMLDivElement>(null),
+    Serve: useRef<HTMLDivElement>(null),
+    Blog: useRef<HTMLDivElement>(null),
+    Pages: useRef<HTMLDivElement>(null),
+    Bottom: useRef<HTMLDivElement>(null),
+    Contact: useRef<HTMLDivElement>(null),
+  };
 
   // Step 4: scroll effect
   useEffect(() => {
