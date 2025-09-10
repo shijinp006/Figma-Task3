@@ -3,7 +3,10 @@ import pizzalogo from "../../assets/pizzahutlogo.png";
 import bucketicon from "../../assets/bucketicon.svg";
 import threeline from "../../assets/threeline.svg";
 
-export const Nav = ({ Action }) => {
+type NavProps = {
+  Action: (action: string) => void;
+};
+export const Nav = ({ Action } :NavProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
   const selecActions = (action: string) => {
     if (action) {

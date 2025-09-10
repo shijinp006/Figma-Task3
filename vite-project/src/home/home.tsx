@@ -15,7 +15,10 @@ import { UpdateNews } from "./components/updatenews&blog";
 import { BottomBanner } from "./components/bottombanner";
 import { Footer } from "./components/footer";
 
-export const Home = ({ action }: any) => {
+type HomeProps = {
+  action?: string;
+}
+export const Home = ({ action }:HomeProps) => {
   // All keys should match the expected action values
   const refs = {
     Home: useRef<HTMLDivElement>(null),
