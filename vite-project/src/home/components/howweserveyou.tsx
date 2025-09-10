@@ -1,9 +1,17 @@
+import { motion } from "framer-motion";
+
 export const HowWeServeYou = () => {
   return (
     <>
       <div className=" flex flex-wrap items-center justify-center w-full h-full lg:h-screen flex-col bg-[#F4F1EA]">
         <div className="flex flex-wrap items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto ">
-          <div className="flex flex-col items-center justify-center ">
+          <motion.div
+            className="flex flex-col items-center justify-center"
+            initial={{ opacity: 0, y: -40 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            viewport={{ once: true }}
+          >
             {/*Head*/}
             <div className="flex flex-col items-center justify-center">
               <div className="flex items-center w-[130px] h-[28px]">
@@ -17,11 +25,20 @@ export const HowWeServeYou = () => {
                 </h2>
               </div>
             </div>
+
             {/*Middle*/}
             <div className="flex items-center justify-center flex-col lg:flex-row relative">
               <div className="hidden lg:block  w-[200px] border-dashed border-[1px] border-[#5C5C5B] absolute left-25 top-18 "></div>
               <div className="hidden lg:block  w-[193px] border-dashed border-[1px] border-[#5C5C5B] absolute right-27 top-18 "></div>
-              <div className="flex items-center justify-center flex-col w-full lg:w-[300px] h-[200px]">
+
+              {/* Box 1 */}
+              <motion.div
+                className="flex items-center justify-center flex-col w-full lg:w-[300px] h-[200px]"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+              >
                 <div className="flex items-center justify-center w-[210px] h-[36px] ">
                   <h2 className="font-[Oswald] font-bold text-[14px] leading-[20px] text-center capitalize text-[#212121]">
                     Cooking with Care
@@ -33,8 +50,16 @@ export const HowWeServeYou = () => {
                     efficient
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-center justify-center w-full lg:w-[300px] h-[200px] rounded-[16px]  border-dashed border-[1px]">
+              </motion.div>
+
+              {/* Box 2 */}
+              <motion.div
+                className="flex flex-col items-center justify-center w-full lg:w-[300px] h-[200px] rounded-[16px]  border-dashed border-[1px]"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.4 }}
+                viewport={{ once: true }}
+              >
                 <div className="flex items-center justify-center w-[200px] h-[36px] ">
                   <h2 className="font-[Oswald] font-bold text-[14px] leading-[20px] text-center capitalize text-[#212121]">
                     QUICKLY DELIVERY
@@ -46,8 +71,16 @@ export const HowWeServeYou = () => {
                     efficient
                   </p>
                 </div>
-              </div>
-              <div className="flex flex-col items-center justify-center w-full lg:w-[300px] h-[200px]">
+              </motion.div>
+
+              {/* Box 3 */}
+              <motion.div
+                className="flex flex-col items-center justify-center w-full lg:w-[300px] h-[200px]"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.6 }}
+                viewport={{ once: true }}
+              >
                 <div className="flex items-center justify-center w-[200px] h-[36px] ">
                   <h2 className="font-[Oswald] font-bold text-[14px] leading-[20px] text-center capitalize text-[#212121]">
                     CHOOSE FOOD
@@ -59,9 +92,9 @@ export const HowWeServeYou = () => {
                     efficient
                   </p>
                 </div>
-              </div>
+              </motion.div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </>

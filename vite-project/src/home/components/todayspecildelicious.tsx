@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import todaySpecialBg from "../../assets/todayspecialbg.png";
 import pizza from "../../assets/pizza3.png";
 import redbg from "../../assets/redbg.png";
@@ -14,17 +15,23 @@ import leaf from "../../assets/leaf.png";
 
 export const TodaySpecialDelicious = () => {
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-2 w-full h-full lg:h-screen relative bg-green-400 border ">
+    <div className="grid grid-cols-1 lg:grid-cols-2 w-full h-full lg:h-screen relative">
       {/* Left Side */}
-  
-
-      <div
+      <motion.div
         className="w-full h-full bg-cover bg-center flex flex-col items-center justify-center relative"
         style={{ backgroundImage: `url(${todaySpecialBg})` }}
+        initial={{ opacity: 0, x: -60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8 }}
       >
         <img src={leaf} alt="leaf" className="w-[60px] border absolute left-0" />
 
-        <div className="flex flex-col items-center justify-center">
+        <motion.div
+          className="flex flex-col items-center justify-center"
+          initial={{ opacity: 0, y: -40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.3 }}
+        >
           <p className="font-[Oswald] font-bold text-[30px] leading-[46.8px] text-center capitalize text-white">
             today
           </p>
@@ -34,25 +41,37 @@ export const TodaySpecialDelicious = () => {
           <p className="font-[Oswald] font-semibold text-[28px] sm:text-[34px] lg:text-[35px] text-center capitalize text-white">
             beef<span className="text-[#FFC222]">chiness pizza</span>
           </p>
-        </div>
-        <div className="flex items-center justify-center w-full max-w-[700px] h-[430px] relative">
+        </motion.div>
+
+        <motion.div
+          className="flex items-center justify-center w-full max-w-[700px] h-[430px] relative"
+          initial={{ scale: 0.8, opacity: 0 }}
+          animate={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
           <img src={pizza} alt="pizza" />
           <img
             src={saveUpTo}
             alt="save Up To"
             className="absolute top-0 right-[1%]"
           />
-        </div>
-            
-      </div>
+        </motion.div>
+      </motion.div>
 
       {/* Right Side (Grid with two boxes) */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 ">
-        {/* Red Background Column */}
+      <motion.div
+        className="grid grid-cols-1 lg:grid-cols-2"
+        initial={{ opacity: 0, x: 60 }}
+        animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
         {/* Card 1 */}
-        <div
-          className="flex p-6 w-full h-[350px] lg:h-full bg-cover bg-center  flex-col"
+        <motion.div
+          className="flex p-6 w-full h-[350px] lg:h-full bg-cover bg-center flex-col"
           style={{ backgroundImage: `url(${redbg})` }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
         >
           <div className="flex items-center justify-center w-[90px] h-[33px]">
             <p className="font-[Oswald] font-medium text-[26px] leading-[33.8px] capitalize text-[#FFC222]">
@@ -91,12 +110,15 @@ export const TodaySpecialDelicious = () => {
               order now
             </p>
           </button>
-        </div>
-        {/* Gray Column */}
+        </motion.div>
+
         {/* Card 2 */}
-        <div
+        <motion.div
           className="flex p-6 w-full h-[350px] lg:h-full   bg-cover bg-center  flex-col"
           style={{ backgroundImage: `url(${blackBg})` }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
         >
           <div className="flex items-center w-[168px] h-[23px]">
             <p className="font-[Oswald] font-semibold text-[14px] leading-[23.4px] capitalize text-[#FFC222]">
@@ -111,13 +133,16 @@ export const TodaySpecialDelicious = () => {
           <div className="flex w-[150px] h-[150px]">
             <img src={fifty} alt="fifty" />
           </div>
-        </div>{" "}
+        </motion.div>
+
         {/* Card 3 */}
-        <div
+        <motion.div
           className="flex p-6 w-full h-[350px] lg:h-full bg-gray-200  bg-cover bg-center flex-row relative "
           style={{ backgroundImage: `url(${orangeBg})` }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
         >
-          {/*left*/}
           <div className="flex flex-col">
             <div className="flex w-[160px] h-[23px]">
               <p className="font-[Oswald] font-semibold text-[14px] leading-[23.4px] capitalize text-white">
@@ -156,10 +181,15 @@ export const TodaySpecialDelicious = () => {
             alt="French Fries"
             className="w-[160px]  absolute right-0 bottom-0"
           />
-        </div>
-        <div
+        </motion.div>
+
+        {/* Card 4 */}
+        <motion.div
           className="w-full h-[350px] lg:h-full flex bg-cover bg-center flex-col p-6 relative"
           style={{ backgroundImage: `url(${blackBg2})` }}
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1.2 }}
         >
           <div className=" flex items-center justify-center  w-[190px] h-[125px]">
             <img src={deliciousChicken} alt="delicious Chicken" />
@@ -167,8 +197,8 @@ export const TodaySpecialDelicious = () => {
           <div className="w-[200px] h-[160px] flex items-center justify-center absolute right-3 bottom-0">
             <img src={chicken} alt="chicken" />
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </div>
   );
 };

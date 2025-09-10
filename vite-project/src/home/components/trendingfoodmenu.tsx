@@ -1,3 +1,5 @@
+import { motion } from "framer-motion";
+
 export const TrendingFoodMenu = () => {
   const menuItems = [
     {
@@ -56,7 +58,12 @@ export const TrendingFoodMenu = () => {
         <div className="flex flex-wrap items-center justify-center max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col w-full lg:mt-8 ">
           <div className="flex items-center justify-center flex-col">
             {/*Head*/}
-            <div className="flex flex-col items-center justify-center">
+            <motion.div
+              className="flex flex-col items-center justify-center"
+              initial={{ opacity: 0, y: -20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6 }}
+            >
               <div className="w-[100px] h-[26px]">
                 <p className="font-[Oswald] font-bold text-[12px] leading-[28px] text-center capitalize text-[#00A149]">
                   About Our Food
@@ -67,13 +74,22 @@ export const TrendingFoodMenu = () => {
                   Trending Food Menu
                 </p>
               </div>
-            </div>
+            </motion.div>
+
             {/*Center*/}
-            <div className="flex flex-col  lg:flex-row lg:flex-wrap lg:pb-4 border-[1px] border-[#5C5C5B] rounded-[13px] h-full lg:h-[460px] items-center justify-center w-full p-1 lg:p-0">
+            <motion.div
+              className="flex flex-col lg:flex-row lg:flex-wrap lg:pb-4 border-[1px] border-[#5C5C5B] rounded-[13px] h-full lg:h-[460px] items-center justify-center w-full p-1 lg:p-0"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.8 }}
+            >
               {menuItems.map((item, index) => (
-                <div
+                <motion.div
                   key={index}
-                  className="w-full lg:w-[500px] h-[120px] flex flex-col justify-center  lg:px-1"
+                  className="w-full lg:w-[500px] h-[120px] flex flex-col justify-center lg:px-1"
+                  initial={{ opacity: 0, x: -30 }}
+                  animate={{ opacity: 1, x: 0 }}
+                  transition={{ duration: 0.6, delay: index * 0.1 }}
                 >
                   {/* Title */}
                   <div className="w-full max-w-[160px] h-[26px]">
@@ -94,9 +110,9 @@ export const TrendingFoodMenu = () => {
                   </div>
 
                   <div className="border-b border-[#5C5C5B] my-4 w-full"></div>
-                </div>
+                </motion.div>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>

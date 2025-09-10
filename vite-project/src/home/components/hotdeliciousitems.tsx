@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import pizza from "../../assets/pizza2.png";
 import frenchFries from "../../assets/frenchfries2.png";
 import chicken from "../../assets/FriedChicken.png";
@@ -32,45 +33,89 @@ export const DeliciousItem = () => {
   ];
 
   return (
-    <div className="flex flex-wrap items-center justify-center w-full h-full lg:h-screen">
+    <motion.div
+      className="flex flex-wrap items-center justify-center w-full h-full lg:h-screen"
+      initial={{ opacity: 0, y: 50 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8 }}
+      viewport={{ once: true }}
+    >
       <div className="flex flex-wrap items-center justify-center w-full h-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
-        <div className="flex flex-col items-center justify-center bg-[#F3F3F3] w-full py-10 lg:h-[500px]">
+        <motion.div
+          className="flex flex-col items-center justify-center bg-[#F3F3F3] w-full py-10 lg:h-[500px]"
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
+          viewport={{ once: true }}
+        >
           {/* Small title */}
-          <div className="w-auto">
+          <motion.div
+            className="w-auto"
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+          >
             <p className="font-[Oswald] font-bold text-[12px] leading-[28px] text-center capitalize text-[#00A149]">
               about our food
             </p>
-          </div>
+          </motion.div>
 
           {/* Main title */}
-          <div className="w-full max-w-[454px]">
+          <motion.div
+            className="w-full max-w-[454px]"
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
             <p className="font-[Oswald] font-bold text-[24px] sm:text-[30px] lg:text-[45px] lg:leading-[67.2px] text-center capitalize text-[#212121]">
               hot delicious item
             </p>
-          </div>
+          </motion.div>
 
           {/* Categories */}
-          <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
+          <motion.div
+            className="flex flex-wrap items-center justify-center gap-3 mt-4"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
+            viewport={{ once: true }}
+          >
             {["chicken fry", "pizza", "burger", "deserts"].map((cat, i) => (
-              <div
+              <motion.div
                 key={i}
                 className={`px-4 h-[40px] rounded-[40px] flex items-center justify-center cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out ${
                   i === 0 ? "bg-[#FFC222]" : "bg-[#D9D9D9]"
                 }`}
+                initial={{ opacity: 0, scale: 0.8 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: i * 0.1 }}
+                viewport={{ once: true }}
               >
                 <p className="font-[Oswald] font-medium text-[14px] capitalize text-[#212121]">
                   {cat}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
 
           {/* Items grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row w-full gap-6 mt-6 items-center justify-center border-0 ">
+          <motion.div
+            className="grid grid-cols-1 sm:grid-cols-2 lg:flex lg:flex-row w-full gap-6 mt-6 items-center justify-center border-0"
+            initial="hidden"
+            whileInView="visible"
+            transition={{ staggerChildren: 0.2 }}
+            viewport={{ once: true }}
+          >
             {Items.map((item, index) => (
-              <div
+              <motion.div
                 key={index}
                 className="flex flex-col items-center p-4 cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: index * 0.2 }}
+                viewport={{ once: true }}
               >
                 <div className="w-[100px] h-[110px] sm:w-[120px] sm:h-[130px] flex items-center justify-center">
                   <img
@@ -89,11 +134,11 @@ export const DeliciousItem = () => {
                 <p className="text-sm text-center text-gray-600 mt-2 px-2 font-[Oswald]">
                   {item.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
       </div>
-    </div>
+    </motion.div>
   );
 };
