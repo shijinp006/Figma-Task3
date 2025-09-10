@@ -1,4 +1,4 @@
-import { useRef, useEffect } from "react";
+import { useRef, useEffect, RefObject } from "react";
 import { LandingPage } from "./components/landingpage";
 import { Banner } from "./components/banner";
 import { BestDeliciousFood } from "./components/the best delicious food ";
@@ -15,12 +15,32 @@ import { UpdateNews } from "./components/updatenews&blog";
 import { BottomBanner } from "./components/bottombanner";
 import { Footer } from "./components/footer";
 
+// Step 1: define valid keys
+type SectionKey =
+  | "Home"
+  | "Banner"
+  | "Best"
+  | "Delicious"
+  | "Black"
+  | "Delivery"
+  | "Shop"
+  | "Trending"
+  | "BurgerPizza"
+  | "AboutUs"
+  | "Serve"
+  | "Blog"
+  | "Pages"
+  | "Bottom"
+  | "Contact";
+
+// Step 2: type the prop
 type HomeProps = {
-  action?: string;
-}
-export const Home = ({ action }:HomeProps) => {
-  // All keys should match the expected action values
-  const refs = {
+  action?: SectionKey;
+};
+
+export const Home = ({ action }: HomeProps) => {
+  // Step 3: type refs properly
+  const refs: Record<SectionKey, RefObject<HTMLDivElement>> = {
     Home: useRef<HTMLDivElement>(null),
     Banner: useRef<HTMLDivElement>(null),
     Best: useRef<HTMLDivElement>(null),
@@ -38,6 +58,7 @@ export const Home = ({ action }:HomeProps) => {
     Contact: useRef<HTMLDivElement>(null),
   };
 
+  // Step 4: scroll effect
   useEffect(() => {
     if (action && refs[action]?.current) {
       refs[action].current.scrollIntoView({ behavior: "smooth", block: "start" });
