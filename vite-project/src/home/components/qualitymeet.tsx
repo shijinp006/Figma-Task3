@@ -120,7 +120,7 @@ export const QualityMeet = () => {
                 className="object-contain max-h-full"
               />
               <motion.div
-                className="absolute right-3 bottom-19 md:right-[185px] md:bottom-[105px]  lg:right-[120px] lg:bottom-[170px] flex items-center justify-center w-[140px] h-[50px] md:w-[160px] md:h-[70px] lg:w-[160px] lg:h-[70px] rounded-[14px] bg-[#00A149] rotate-[-25.5deg] shadow-md border"
+                className="absolute right-3 bottom-19 md:right-[185px] md:bottom-[105px]  lg:right-[120px] lg:bottom-[170px] flex items-center justify-center w-[140px] h-[50px] md:w-[160px] md:h-[70px] lg:w-[160px] lg:h-[70px] rounded-[14px] bg-[#00A149] rotate-[-25.5deg] shadow-md "
                 initial={{ scale: 0 }}
                 animate={{ scale: 1 }}
                 transition={{ duration: 0.6, delay: 1 }}
