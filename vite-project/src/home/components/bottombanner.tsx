@@ -1,9 +1,10 @@
 import { motion } from "framer-motion";
 import normalburger from "../../assets/normalburger2.jpg";
 import burger from "../../assets/burger5.jpg";
-import pasta from "../../assets/pasta.jpg";
-import burger7 from "../../assets/burger7.jpg";
-import image from "../../assets/image.jpg";
+import frenchFries from "../../assets/frenchfries3.jpg"
+import cake from "../../assets/cake.jpg"
+import image from "../../assets/image2.jpg"
+
 
 export const BottomBanner = () => {
   return (
@@ -15,7 +16,7 @@ export const BottomBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <img src={pasta} alt="pasta" className="h-[297px] w-full" />
+          <img src={frenchFries} alt="French Fries" className="h-[297px] w-full" />
         </motion.div>
 
         <motion.div
@@ -24,7 +25,7 @@ export const BottomBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          <img src={burger7} alt="burger" className="h-[297px] w-full" />
+          <img src={cake} alt="Cake" className="h-[297px] w-full" />
         </motion.div>
 
         <motion.div
@@ -42,7 +43,7 @@ export const BottomBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.6 }}
         >
-          <img src={burger} alt="Burger" className="h-[297px] w-full" />
+          <img src={normalburger} alt=" Normal Burger" className="h-[297px] w-full" />
         </motion.div>
 
         <motion.div
@@ -51,7 +52,7 @@ export const BottomBanner = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.8 }}
         >
-          <img src={normalburger} alt="normal Burger" className="h-[297px] w-full" />
+          <img src={burger} alt="Burger" className="h-[297px] w-full" />
         </motion.div>
       </div>
     </div>
