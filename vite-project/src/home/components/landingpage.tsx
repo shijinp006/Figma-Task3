@@ -8,7 +8,7 @@ export const LandingPage = () => {
   return (
     <>
       <div
-        className="flex flex-wrap w-full h-screen relative items-center justify-center border"
+        className="flex flex-wrap w-full h-screen relative items-center justify-center "
         style={{
           backgroundImage:
             `url(${bgImage})`,
