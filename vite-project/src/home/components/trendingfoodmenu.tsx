@@ -109,7 +109,7 @@ export const TrendingFoodMenu = () => {
                     </p>
                   </div>
 
-                  <div className="border-b border-dashed border-[#5C5C5B] my-4 w-full "></div>
+                  <div className="border-b border-dashed border-[#5C5C5B] my-4 w-full lg:w-[480px] "></div>
                 </motion.div>
               ))}
             </motion.div>
