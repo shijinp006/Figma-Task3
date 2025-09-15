@@ -3,6 +3,7 @@ import pizza from "../../assets/pizza2.png";
 import frenchFries from "../../assets/frenchfries2.png";
 import chicken from "../../assets/FriedChicken.png";
 import burger from "../../assets/burger (2).png";
+import bg from "../../assets/shadowbg (2).png";
 
 export const DeliciousItem = () => {
   const Items = [
@@ -42,11 +43,18 @@ export const DeliciousItem = () => {
     >
       <div className="flex flex-wrap items-center justify-center w-full h-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
         <motion.div
-          className="flex flex-col items-center justify-center bg-[#F3F3F3] w-full py-10 lg:h-[500px]"
+          className="flex flex-col items-center justify-center bg-[#F3F3F3] w-full py-10 lg:h-[500px] lg:w-[1050px] "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
+          style={{
+            backgroundImage:
+              `url(${bg})`,
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+          }}
         >
           {/* Small title */}
           <motion.div
@@ -111,7 +119,7 @@ export const DeliciousItem = () => {
             {Items.map((item, index) => (
               <motion.div
                 key={index}
-                className="flex flex-col items-center p-4 cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+                className="flex flex-col items-center p-4 cursor-pointer  hover:scale-105 transition duration-300 ease-in-out"
                 initial={{ opacity: 0, y: 40 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.7, delay: index * 0.2 }}

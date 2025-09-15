@@ -17,11 +17,11 @@ export const BurgerPizzaBanner = () => {
     <>
       <div className="w-full h-full lg:h-screen flex flex-wrap items-center justify-center relative">
         <div className="flex flex-wrap items-center justify-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
-          <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center gap-2 lg:gap-3">
+          <div className="flex flex-col md:flex-row lg:flex-row items-center justify-center gap-2 lg:gap-5">
             {Images.map((item, index) => (
               <motion.div
                 key={index}
-                className="w-full pb-2 md:h-[300px] md:pb-4 lg:w-[320px] lg:h-[430px] lg:pb-0 flex items-center justify-center overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
+                className=" w-full pb-2 md:h-[300px] md:pb-4 lg:w-[320px] lg:h-[430px] lg:pb-0 flex items-center justify-center overflow-hidden cursor-pointer hover:shadow-lg hover:scale-105 transition duration-300 ease-in-out"
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: index * 0.2 }}

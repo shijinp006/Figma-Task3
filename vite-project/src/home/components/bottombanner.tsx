@@ -8,7 +8,7 @@ import image from "../../assets/image.jpg";
 export const BottomBanner = () => {
   return (
     <div className="flex items-center justify-center w-full h-full lg:mt-0 mt-3 ">
-      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-full h-full">
+      <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 w-full h-full ">
         <motion.div
           className="flex items-center justify-center w-full h-full "
           initial={{ opacity: 0, y: 50 }}

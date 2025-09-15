@@ -2,16 +2,25 @@ import { motion } from "framer-motion";
 import yellowunderline from "../../assets/yellowunderline.svg";
 import truckicon from "../../assets/truckicon.svg";
 import discounticon from "../../assets/discount.png";
+import bgImage from "../../assets/vegetables-set-left-black-slate 1.png";
 
 export const LandingPage = () => {
   return (
     <>
-      <div className="flex flex-wrap w-full h-screen relative bg-black items-center justify-center border">
-        <div className="flex items-center w-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
+      <div
+        className="flex flex-wrap w-full h-screen relative bg-black items-center justify-center border"
+        style={{
+          backgroundImage:
+            `url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="flex items-center  w-full max-w-7xl px-4 md:px-6 lg:px-10  lg:ml-10">
           <div className="flex flex-row items-center justify-center relative">
             <div className="flex flex-col gap-4">
               <motion.div
-                className="flex flex-col justify-center"
+                className="flex flex-col justify-center  lg:gap-4"
                 initial={{ opacity: 0, y: 40 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.8 }}
@@ -22,7 +31,7 @@ export const LandingPage = () => {
                   </p>
                 </div>
                 <div className="flex items-center w-full md:w-[550px] lg:w-[710px] h-[100px]">
-                  <h4 className="font-['Roboto'] font-black text-[30px] leading-[50px] lg:text-[50px] lg:leading-[55px] align-middle text-white">
+                  <h4 className="font-['Roboto'] font-black text-[34px] leading-[50px] lg:text-[65px] lg:leading-[65px] align-middle text-white">
                     The best Food <br /> Collection 2024
                   </h4>
                 </div>
@@ -44,9 +53,8 @@ export const LandingPage = () => {
               </motion.div>
 
               <motion.div
-                className="flex flex-col justify-center"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
+                className="flex flex-col justify-center w-[120px]"
+               
               >
                 <button
                   className="bg-[#EF294C] w-[120px] h-[40px] rounded-[9px] opacity-100 

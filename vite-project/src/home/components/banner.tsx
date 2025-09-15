@@ -16,14 +16,14 @@ export const Banner = () => {
     <>
       <div className="flex flex-wrap w-full h-full lg:h-screen justify-center items-center mt-2 relative">
         <div className="flex flex-wrap items-center justify-center w-full h-full max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
-          <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-7">
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-3 lg:gap-7 ">
 
             {/* First Card */}
             <motion.div
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8 }}
-              className="w-full lg:w-[400px] h-[330px] rounded-[9px] bg-cover bg-center p-8 relative cursor-pointer hover:scale-95 transition-transform duration-300"
+              className="w-full lg:w-[370px] h-[330px] rounded-[9px] bg-cover bg-center p-8 relative cursor-pointer hover:scale-95 transition-transform duration-300"
               style={{
                 backgroundImage: `url(${blackbg})`,
               }}
@@ -56,7 +56,7 @@ export const Banner = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 src={saveupto}
                 alt="save up to 50%"
-                className="absolute top-[40%] right-[1%] md:top-[2%] md:right-[7%] lg:top-[2%] lg:right-[10%]"
+                className="absolute top-[40%] right-[1%] md:top-[2%] md:right-[7%] lg:top-[2%] lg:right-[2%]"
               />
               <motion.img
                 initial={{ y: 40, opacity: 0 }}
@@ -73,7 +73,7 @@ export const Banner = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="w-full lg:w-[400px] h-[330px] rounded-[9px] p-8 relative cursor-pointer hover:scale-95 transition-transform duration-300"
+              className="w-full lg:w-[370px] h-[330px] rounded-[9px] p-8 relative cursor-pointer hover:scale-95 transition-transform duration-300"
               style={{
                 backgroundImage: `url(${orangebg})`,
               }}
@@ -116,7 +116,7 @@ export const Banner = () => {
                 transition={{ duration: 0.7, delay: 0.5 }}
                 src={frenchfries}
                 alt="frenchfries"
-                className="absolute bottom-[30%] left-[52%] md:bottom-[24%] md:left-[41%] lg:bottom-[24%] lg:left-[38%] w-[110px] md:w-[160px] lg:w-[160px] lg:h-[200px]"
+                className="absolute bottom-[30%] left-[52%] md:bottom-[24%] md:left-[41%] lg:bottom-[24%] lg:left-[40%] w-[110px] md:w-[160px] lg:w-[160px] lg:h-[200px]"
               />
             </motion.div>
 
@@ -125,7 +125,7 @@ export const Banner = () => {
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.4 }}
-              className="w-full lg:w-[400px] h-[330px] rounded-[9px] p-8 relative cursor-pointer hover:scale-95 transition-transform duration-300"
+              className="w-full lg:w-[370px] h-[330px] rounded-[9px] p-8 relative cursor-pointer hover:scale-95 transition-transform duration-300"
               style={{
                 backgroundImage: `url(${redbg})`,
               }}
@@ -158,7 +158,7 @@ export const Banner = () => {
                 transition={{ duration: 0.6, delay: 0.3 }}
                 src={fifty}
                 alt="fifty"
-                className=" w-[70px] md:w-[100px] lg:w-[100px] absolute top-[15%] right-[10%] md:top-[10%] md:right-[34%] lg:top-[10%] lg:right-[38%]"
+                className=" w-[70px] md:w-[100px] lg:w-[100px] absolute top-[15%] right-[10%] md:top-[10%] md:right-[34%] lg:top-[10%] lg:right-[34%]"
               />
               <motion.img
                 initial={{ y: 50, opacity: 0 }}

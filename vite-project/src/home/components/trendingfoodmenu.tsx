@@ -56,10 +56,10 @@ export const TrendingFoodMenu = () => {
     <>
       <div className="flex flex-wrap items-center justify-center flex-col w-full h-full lg:h-screen lg:mt-20">
         <div className="flex flex-wrap items-center justify-center max-w-7xl px-4 md:px-6 lg:px-10 mx-auto flex-col w-full lg:mt-8 ">
-          <div className="flex items-center justify-center flex-col">
+          <div className="flex items-center justify-center flex-col ">
             {/*Head*/}
             <motion.div
-              className="flex flex-col items-center justify-center"
+              className="flex flex-col items-center justify-center "
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6 }}
@@ -78,7 +78,7 @@ export const TrendingFoodMenu = () => {
 
             {/*Center*/}
             <motion.div
-              className="flex flex-col lg:flex-row lg:flex-wrap lg:pb-4 border-[1px] border-[#5C5C5B] rounded-[13px] h-full lg:h-[460px] items-center justify-center w-full p-1 lg:p-0"
+              className="flex flex-col lg:flex-row lg:flex-wrap lg:pb-4 border-[1px] border-dashed  border-[#5C5C5B] rounded-[13px] h-full lg:h-[460px] items-center justify-center w-full lg:w-[1020px] p-1 lg:p-0"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.8 }}
@@ -109,7 +109,7 @@ export const TrendingFoodMenu = () => {
                     </p>
                   </div>
 
-                  <div className="border-b border-[#5C5C5B] my-4 w-full"></div>
+                  <div className="border-b border-dashed border-[#5C5C5B] my-4 w-full "></div>
                 </motion.div>
               ))}
             </motion.div>
