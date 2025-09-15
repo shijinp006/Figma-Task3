@@ -6,27 +6,36 @@ import threeline from "../../assets/threeline.svg";
 type NavProps = {
   Action: (action: string) => void;
 };
-export const Nav = ({ Action } :NavProps) => {
+export const Nav = ({ Action }: NavProps) => {
   const [menuOpen, setMenuOpen] = useState(false);
+
   const selecActions = (action: string) => {
-    if (action) {
-      const formattedAction = action.replace(/\s+/g, "");
+    if (!action) return;
+
+    const formattedAction = action.replace(/\s+/g, "");
+    Action(formattedAction);
+    Action("");
+    setTimeout(() => {
       Action(formattedAction);
-    }
+    }, 0);
   };
 
   const handleClick = (action: string) => {
     setMenuOpen(false);
-    if (action) {
-      const formattedAction = action.replace(/\s+/g, "");
+
+    if (!action) return;
+
+    const formattedAction = action.replace(/\s+/g, "");
+
+    // Reset first so it always re-triggers
+    Action("");
+    setTimeout(() => {
       Action(formattedAction);
-    }
+    }, 0);
   };
 
   return (
-    
     <nav className="w-full h-[97px] bg-[#FFFFFF] flex items-center relative  px-4 lg:px-0">
-  
       <div className="w-full flex items-center justify-between max-w-7xl px-4 md:px-6 lg:px-10 mx-auto">
         {/* Logo + Title */}
         <div className="flex items-center gap-2">
