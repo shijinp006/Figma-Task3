@@ -3,15 +3,24 @@ import yellowunderline from "../../assets/yellowunderline.svg";
 import truckicon from "../../assets/truckicon.svg";
 import discounticon from "../../assets/discount.png";
 import bgImage from "../../assets/vegetables-set-left-black-slate 1.png";
-
+import { useState } from "react";
 export const LandingPage = () => {
+  const [subscribe, setSubscribe] = useState<boolean>(false);
+  const HandleClick = () => {
+    if (subscribe === true) {
+      setSubscribe(false);
+      alert("Do you want to unsubscribe?");
+    } else {
+      setSubscribe(true);
+      alert("You have successfully subscribed!");
+    }
+  };
   return (
     <>
       <div
         className="flex flex-wrap w-full h-screen relative items-center justify-center "
         style={{
-          backgroundImage:
-            `url(${bgImage})`,
+          backgroundImage: `url(${bgImage})`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -52,10 +61,7 @@ export const LandingPage = () => {
                 </p>
               </motion.div>
 
-              <motion.div
-                className="flex flex-col justify-center w-[120px]"
-               
-              >
+              <motion.div className="flex flex-col justify-center w-[120px]">
                 <button
                   className="bg-[#EF294C] w-[120px] h-[40px] rounded-[9px] opacity-100 
              text-white font-[Oswald] font-semibold text-xs 
@@ -85,8 +91,13 @@ export const LandingPage = () => {
                       className="text-xs flex-grow border-none outline-none bg-transparent"
                     />
                   </div>
-                  <button className="w-full h-full bg-[#EF294C] text-white text-sm font-medium rounded-full cursor-pointer transition transform hover:scale-95">
-                    Subscribe
+                  <button
+                    className={`w-full h-full bg-[#EF294C] text-white text-sm font-medium rounded-full cursor-pointer transition transform hover:scale-95  ${
+                      subscribe ? "bg-green-500" : "bg-[#EF294C]"
+                    }`}
+                    onClick={HandleClick}
+                  >
+                    {subscribe ? "Subscribed" : "Subscribe"}
                   </button>
                 </div>
               </motion.div>
