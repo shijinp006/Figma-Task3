@@ -170,10 +170,10 @@ export const BestDeliciousFood = () => {
           >
             <img src={profile} alt="profile" />
             <img src={sign} alt="sign" />
-            <div className="w-full lg:w-[450px] h-[36px] rounded-[19px] bg-[#212121] flex items-center justify-center lg:mr-5">
+            <div className="w-full lg:w-[400px] h-[30px] rounded-[19px] bg-[#212121] flex items-center justify-center lg:mr-5">
               <div className="w-[212px] h-[16px] flex items-center justify-center">
-                <p className="font-[Oswald] font-semibold text-[16px] leading-[16px] text-center capitalize align-middle text-[#FFFFFF]">
-                  Foundation, since 21st Oct, 2019
+                <p className="font-[Oswald] font-semibold text-[12px] leading-[16px] text-center capitalize align-middle text-[#FFFFFF]">
+                  Foundation, since <span className="text-[#FFC222]">21st</span> Oct, 2019
                 </p>
               </div>
             </div>
