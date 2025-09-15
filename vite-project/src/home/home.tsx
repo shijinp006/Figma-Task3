@@ -41,7 +41,7 @@ export const Home = ({ action }: HomeProps) => {
     Bottom: useRef<HTMLDivElement>(null),
     Contact: useRef<HTMLDivElement>(null),
   };
-  console.log(action, "action11");
+
 
   // Step 4: scroll effect
   useEffect(() => {
