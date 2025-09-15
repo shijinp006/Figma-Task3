@@ -79,9 +79,9 @@ export const BestDeliciousFood = () => {
           </div>
 
           {/* Stats */}
-          <div className="flex flex-col lg:flex-row w-full lg:w-[690px] lg:h-[125px] border-t border-[#D9D9D9] items-center">
+          <div className="flex flex-col lg:flex-row w-full lg:w-[650px] lg:h-[125px] border-t border-[#D9D9D9] items-center">
             <motion.div
-              className="w-full lg:w-[224px] h-[124px] border-b border-[#D9D9D9] flex flex-col items-center justify-center relative"
+              className="w-full lg:w-[224px] h-[124px]  lg:border-r border-[#D9D9D9] flex flex-col items-center justify-center relative"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8 }}
@@ -108,7 +108,7 @@ export const BestDeliciousFood = () => {
 
             {/* Repeat for other stats */}
             <motion.div
-              className="w-[224px] h-[124px] border-b border-[#D9D9D9] flex flex-col items-center justify-center relative"
+              className="w-[224px] h-[124px] lg:border-r border-[#D9D9D9] flex flex-col items-center justify-center relative"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.2 }}
@@ -134,7 +134,7 @@ export const BestDeliciousFood = () => {
             </motion.div>
 
             <motion.div
-              className="w-[224px] h-[124px] border-b border-[#D9D9D9] flex flex-col items-center justify-center relative"
+              className="w-[224px] h-[124px]  flex flex-col items-center justify-center relative"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.8, delay: 0.4 }}
@@ -170,7 +170,7 @@ export const BestDeliciousFood = () => {
           >
             <img src={profile} alt="profile" />
             <img src={sign} alt="sign" />
-            <div className="w-full lg:w-[400px] h-[30px] rounded-[19px] bg-[#212121] flex items-center justify-center lg:mr-5">
+            <div className="w-full lg:w-[350px] h-[30px] rounded-[19px] bg-[#212121] flex items-center justify-center lg:mr-19">
               <div className="w-[212px] h-[16px] flex items-center justify-center">
                 <p className="font-[Oswald] font-semibold text-[12px] leading-[16px] text-center capitalize align-middle text-[#FFFFFF]">
                   Foundation, since <span className="text-[#FFC222]">21st</span> Oct, 2019
