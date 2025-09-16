@@ -27,7 +27,7 @@ export const Footer = () => {
         {/* top section  */}
         <div className="h-full grid gap-10 grid-cols-1 md:grid-cols-4 lg:grid-cols-6">
           <div
-            className=" col-span-2 bg-[#F3274C] h-[364px] flex 
+            className="  col-span-3 lg:col-span-2 bg-[#F3274C] h-[364px] flex 
             flex-col justify-between rounded-2xl p-10"
           >
             <div>
@@ -41,7 +41,7 @@ export const Footer = () => {
               </div>
             </div>
             <div>
-              <p className="  w-full lg:w-[306.38px] h-[26.67px] rotate-0 opacity-100 font-[Fredoka_One] text-[12px] leading-[26.67px] f text-white align-middle">
+              <p className="  w-full lg:w-[306.38px] h-[26.67px] rotate-0 opacity-100 font-[Fredoka_One] text-[10px] lg:text-[12px] leading-[26.67px] f text-white align-middle">
                 Tuesday – Saturday: 12:00pm – 23:00pm
               </p>
               <p className="w-[137.14px] h-[26.67px] rotate-0 opacity-100 font-[Fredoka_One] text-[12px] leading-[26.67px]  text-white align-middle underline decoration-solid decoration-[0px]">
@@ -54,6 +54,7 @@ export const Footer = () => {
               </p>
             </div>
           </div>
+
           <div className="flex flex-col">
             <h4 className="font-[Fredoka_One] text-[20px] leading-[43.33px] font-normal text-black relative inline-block">
               About
@@ -106,7 +107,7 @@ export const Footer = () => {
                 placeholder="Email Address"
                 className="w-[250px] h-[50px] rounded-[9px] border border-[#DEDEDE] bg-white px-4 text-[16px] leading-[100%] font-epilogue font-normal text-[#C6C6C6] outline-none"
               />
-              <div className="w-[130px] h-[55px] rounded-[12px] border-3 border-[#F3274C] relative lg:ml-4 opacity-100  ">
+              <div className="w-[130px] h-[55px] rounded-[12px] border-3 border-[#F3274C] relative mt-2 lg:ml-4 opacity-100 lg:mt-0  ">
                 <button className="w-[130px] h-[47px] rounded-[12px] bg-[#F3274C] text-white font-[Fredoka_One] text-[12px] leading-[100%] font-normal text-center align-middle relative lg:top-[2%] lg:left-[-10%] cursor-pointer hover:scale-90 transition-transform duration-200">
                   Subscribe
                 </button>

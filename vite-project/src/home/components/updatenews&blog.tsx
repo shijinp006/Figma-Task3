@@ -57,7 +57,7 @@ export const UpdateNews = () => {
                       </p>
                     </div>
                   </div>
-                  <div className="flex items-center justify-center w-full h-[77px]">
+                  <div className="flex items-center justify-center w-full h-[77px] mt-3 lg:mt-0 md:mt-0">
                     <div className="flex items-center justify-around w-full h-[72px]">
                       <p className="font-[Oswald] font-semibold text-[24px] leading-[30px] capitalize text-[#212121]">
                         Quick Cravings: Unraveling Fast Food Delights
@@ -138,7 +138,7 @@ export const UpdateNews = () => {
                 </div>
                 <div className="flex items-center justify-center flex-col w-full  lg:w-[300px] h-[320px] bg-[#F4F4F4] rounded-[4px] p-4">
                   <div className="flex  flex-row w-full  lg:h-[40px] border-b border-[#00A149]">
-                    <div className="flex items-center justify-center w-[80px] h-[28px]">
+                    <div className="flex items-center justify-center w-[80px] h-[28px] mb-2 lg:mb-0">
                       <p className="font-[Oswald] font-semibold text-[12px] leading-[16px] capitalize text-[#212121]">
                         15 Feb 2024
                       </p>
